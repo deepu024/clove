@@ -155,7 +155,7 @@ li svg {
 .locate {
     width: 400px;
     display: flex;
-    border: 1px solid var(--secondary-colorf);
+    border: 1px solid var(--secondary-color);
     border-radius: 20px;
     padding: 9px 20px;
     background-color: var(--secondary-color);
@@ -232,7 +232,284 @@ h2 {
 
 .explore-treatments a {
     text-decoration: none;
-    color: #F28C64;
+    color: var(--secondary-color);
     font-weight: bold;
     font-size: 18px;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-card {
+    background: #fff7f0;
+}
+
+.info-card {
+    background: #FBF5FF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    text-align: left;
+}
+
+.info-card img {
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-item {
+    background: #E1F2EE;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #ff914d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ff7b2b;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .grid-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.testimonials-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--primary-light); 
+ 
+}
+
+.testimonials-section h2 {
+    margin-bottom: 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    color: #fff;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.testimonial-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.testimonial-item .name {
+    text-align: left;
+    color: #ff914d;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.testimonial-item .service {
+    text-align: left;
+    color: #ff914d;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f0;
+}
+
+.specialists-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #fff5f0;
+    border-radius: 15px;
+}
+
+.specialists-info {
+    width: 45%;
+}
+
+.specialists-info h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.specialists-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-item img {
+    width: 50px;
+    height: auto;
+}
+
+.stat-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-item p {
+    margin: 0;
+    color: #333;
+}
+
+.specialists-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.specialist-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.specialist-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.specialist-card p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.meet-doctors-button {
+    background-color: #ff914d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
 }
